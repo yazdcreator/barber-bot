@@ -88,6 +88,8 @@ async def time_chosen(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # تشغيل البوت
 if _name_ == '_main_':
     TOKEN = os.environ.get("BOT_TOKEN")
+    if not TOKEN:
+    raise ValueError(" لم يتم العثور على BOT_TOKEN...")
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))

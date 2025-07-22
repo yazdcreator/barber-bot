@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandle
 
 # بيانات الأيام والأوقات
 DAYS = ['السبت', 'الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس']
-TIMES = ['10:00', ' '11:00', '12:00', '16:00', '17:00', '18:00']
+TIMES = ['10:00',  '11:00', '12:00', '16:00', '17:00', '18:00']
 
 CSV_FILE = "bookings.csv"
 

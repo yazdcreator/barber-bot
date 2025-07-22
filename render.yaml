@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: barber-bot-csv
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value:7866829481:AAEQiVm3xW9R3nVUGlElcb4j-7idL_ImIC4
+     

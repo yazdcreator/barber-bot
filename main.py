@@ -48,7 +48,7 @@ def save_and_sort_booking(name, day, time, date):
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton(day, callback_data=day)] for day in DAYS]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await update.message.reply_text("👋 مرحباً بك في بوت الحجز عند الحلاق.
+    await update.message.reply_text(" مرحباً بك في بوت الحجز عند الحلاق.
 اختر اليوم المناسب:", reply_markup=reply_markup)
 
 # اختيار اليوم

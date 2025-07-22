@@ -79,8 +79,7 @@ async def time_chosen(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # حفظ الموعد في CSV مع ترتيب تلقائي
     save_and_sort_booking(name, day, time, str(booking_date))
 
-    await query.edit_message_text(f"✅ تم حجز موعدك يوم {day} الساعة {time}.
-نراك قريباً 💈")
+    await query.edit_message_text(f" تم حجز موعدك يوم {day} الساعة {time}.نراك قريباً ")
 
 # تشغيل البوت
 if __name__ == '__main__':

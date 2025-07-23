@@ -86,7 +86,7 @@ async def time_chosen(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.edit_message_text(f"✅ تم حجز موعدك يوم {day} الساعة {time}.\nنراك قريباً 💈")
 
 # تشغيل البوت
-if _name_ == '_main_':
+if name == '_main_':
     TOKEN = os.environ.get("BOT_TOKEN")
 if not TOKEN:
     raise ValueError(" لم يتم العثور على BOT_TOKEN...")
